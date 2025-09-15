@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LearnSync - Sign Up</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="signup-container">
+    <h1>Sign Up</h1>
+
+    <!-- Toggle -->
+    <div class="toggle">
+      <button id="studentBtn" class="active">For Students</button>
+      <button id="professorBtn">For Professors</button>
+    </div>
+
+    <!-- Name fields -->
+    <div class="name-fields">
+      <div class="input-name">
+        <input type="text" id="firstName" placeholder="First Name" required>
+      </div>
+      <div class="input-name">
+        <input type="text" id="lastName" placeholder="Last Name" required>
+      </div>
+    </div>
+    <form action="signup.php" method="POST">
+    <!-- Email -->
+    <div class="input-group">
+      <i class="fa-solid fa-user icon"></i>
+      <input type="email" id="email" placeholder="User ID" required>
+    </div>
+
+    <!-- Password -->
+    <div class="input-group">
+      <i class="fa-solid fa-lock icon"></i>
+      <input type="password" id="password" placeholder="Password" required>
+      <i class="fa-solid fa-eye toggle-password" onclick="togglePassword('password', this)"></i>
+    </div>
+
+    <!-- Confirm Password -->
+    <div class="input-group">
+      <i class="fa-solid fa-lock icon"></i>
+      <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+      <i class="fa-solid fa-eye toggle-password" onclick="togglePassword('confirmPassword', this)"></i>
+    </div>
+    <span id="passwordError" style="color: yellow; font-size: 12px; display: none; margin-left: 5px;">
+      Passwords do not match
+    </span>
+
+    <!-- Privacy checkbox -->
+    <div class="checkbox-group">
+      <input type="checkbox" id="policy">
+      <label for="policy">I agree with privacy and policy</label>
+    </div>
+
+    <!-- Sign Up Button -->
+    <button class="signup-btn" id="signupBtn">Sign Up</button>
+    
+    </form>
+
+    <!-- Redirect to Login -->
+    <div class="login">
+      Already have an account? <a href="../login/index.html">Log In</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

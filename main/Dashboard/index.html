@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LearnSync Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="logo">
+      <strong>LEARNSYNC</strong>
+    </div>
+
+    <nav>
+      <a onclick="showSection('dashboard-section', this)" class="active">
+        <img src="images/home-icon.png" alt="Dashboard"> <span>Dashboard</span>
+      </a>
+      <a onclick="showSection('calendar-section', this)">
+        <img src="images/calendar-icon.png" alt="Calendar"> <span>Calendar</span>
+      </a>
+      <a onclick="showSection('enrolled-section', this)">
+        <img src="images/hat-icon.png" alt="Enrolled"> <span>Enrolled</span>
+      </a>
+    </nav>
+
+    <div class="sidebar-bottom">
+      <a onclick="showSection('archived-section', this)">
+        <img src="images/folder-icon.png" alt="Archived"> <span>Archived</span>
+      </a>
+      <a onclick="showSection('settings-section', this)">
+        <img src="images/setting-icon.png" alt="Settings"> <span>Settings</span>
+      </a>
+      <a onclick="logOut()">
+        <img src="images/exit-icon.png" alt="Log Out"> <span>Log Out</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main">
+    <div class="topbar">
+      <button class="toggle-btn" onclick="toggleSidebar()">
+        <img src="images/burger-icon.png" alt="Menu">
+      </button>
+
+      <div class="right-controls">
+        <div class="search-bar">
+          <img src="images/search-icon.png" alt="Search">
+          <input type="text" placeholder="Search...">
+        </div>
+        <div class="profile">
+          <img src="images/bell-icon.png" alt="Notifications" class="icon">
+          <img src="images/profile.png" alt="Profile" class="avatar">
+        </div>
+      </div>
+    </div>
+
+    <!-- Dashboard -->
+    <div id="dashboard-section" class="content-section active">
+      <div class="welcome">
+        <h1>Welcome Back, User!</h1>
+        <div class="filters">
+          <select>
+            <option>All Classes</option>
+          </select>
+          <select>
+            <option>To-Do</option>
+          </select>
+          <button>Filter ⬇</button>
+        </div>
+      </div>
+      <div class="right-panels">
+        <div class="panel">
+          <h3>Upcoming Deadlines</h3>
+        </div>
+        <div class="panel">
+          <h3>Activity</h3>
+          <p>No task completed today.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Calendar -->
+    <div id="calendar-section" class="content-section">
+      <h2>📅 Calendar</h2>
+      <p>Your calendar view will go here.</p>
+    </div>
+
+    <!-- Enrolled -->
+    <div id="enrolled-section" class="content-section">
+      <h2>🎓 Enrolled Classes</h2>
+      <p>List of enrolled classes here.</p>
+    </div>
+
+    <!-- Archived -->
+    <div id="archived-section" class="content-section">
+      <h2>📂 Archived</h2>
+      <p>Your archived classes/courses.</p>
+    </div>
+
+    <!-- Settings -->
+    <div id="settings-section" class="content-section">
+      <h2>⚙ Settings</h2>
+      <p>Change your preferences here.</p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>

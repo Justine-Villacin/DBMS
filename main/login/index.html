@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LearnSync - Log In</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="login-container" id="loginContainer">
+    <h1>Log In</h1>
+
+    <!-- Toggle buttons -->
+    <div class="toggle">
+      <button class="active" id="studentBtn">For Students</button>
+      <button id="profBtn">For Professors</button>
+    </div>
+
+    <form action="login.php" method="POST">
+    <!-- Email -->
+    <div class="input-group">
+      <i class="fa-solid fa-user icon"></i>
+      <input type="email" id="email" placeholder="User ID" required>
+    </div>
+
+    <!-- Password -->
+    <div class="input-group">
+      <i class="fa-solid fa-lock icon"></i>
+      <input type="password" id="password" placeholder="Password" required>
+      <i class="fa-solid fa-eye eye" id="togglePassword"></i>
+    </div>
+
+
+    <!-- Options -->
+    <div class="options">
+      <label><input type="checkbox" id="remember"> Remember Me</label>
+      <a id="forgotPasswordLink">Forgot Password?</a>
+    </div>
+
+    <!-- Login Button -->
+    <button class="login-btn" id="loginBtn">Log In</button>
+
+    </form>
+
+    <!-- Sign Up -->
+    <div class="signup">
+      Don’t have an account? <a href="../signup/index.html">SIGN UP</a>
+    </div>
+  </div>
+
+  <!-- Forgot Password Modal -->
+  <div class="modal" id="forgotModal">
+    <div class="modal-content">
+      <h2>Reset Password</h2>
+      <p>Enter your registered email to reset your password.</p>
+      <input type="email" id="resetEmail" placeholder="Enter your email">
+      <button id="resetBtn">Send Reset Link</button>
+      <div class="close" id="closeModal">Back to Login</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,125 @@
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #0d4976;
+      color: white;
+      text-align: center;
+    }
+
+    /* Header */
+    .header {
+      background-color: #1b4e7d;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+    }
+
+    .header .logo {
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .header .buttons a {
+      margin-left: 20px;
+      padding: 8px 18px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .header .buttons .signup {
+      color: white;
+    }
+
+    .header .buttons .login {
+      background-color: #ff7f4d;
+      color: white;
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 80px 20px 50px;
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url('bg-placeholder.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero h1 {
+      font-size: 28px;
+      margin: 0;
+    }
+
+    .hero h2 {
+      font-size: 20px;
+      font-weight: normal;
+      margin-top: 10px;
+    }
+
+    /* Programs Section */
+    .programs {
+      padding: 40px 20px;
+    }
+
+    .programs h3 {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    .program-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .program {
+      text-align: center;
+    }
+
+    .program img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 10px;
+    }
+
+    .program span {
+      background-color: #ff7f4d;
+      padding: 8px 15px;
+      border-radius: 8px;
+      color: white;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    /* About Section */
+    .about {
+      padding: 50px 20px;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.8;
+      font-size: 14px;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #0b2f4a;
+      padding: 20px 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      flex-wrap: wrap;
+    }
+
+    .footer div {
+      margin: 5px;
+    }
+
+    .footer a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+    }

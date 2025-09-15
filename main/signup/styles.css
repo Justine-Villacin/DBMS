@@ -1,0 +1,156 @@
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-image: url('../images/COENG.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .signup-container {
+      background: rgba(93, 136, 165, 0.6);
+      backdrop-filter: blur(10px);
+      padding: 40px;
+      border-radius: 20px;
+      width: 450px;
+      -webkit-backdrop-filter: blur(10px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: white;
+    }
+
+    .signup-container h1 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 32px;
+      font-weight: bold;
+      color: black;
+    }
+
+    /* Toggle buttons */
+        .toggle {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .toggle button {
+      flex: 1;
+      padding: 10px;
+      border: 2px solid rgb(255, 255, 255);
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: 6px 6px 0 0;
+      background-color: transparent;
+      color: white;
+      transition: 0.3s;
+    }
+
+    .toggle button.active {
+      background-color: #006fd0;
+      border: none;
+      color: white;
+    } 
+
+    .name-fields {
+      display: flex;
+      gap: 10px;
+    }
+
+    /* Input groups */
+    .input-group {
+      position: relative;
+      margin: 12px 0;
+    }
+
+    .input-group input {
+      width: 83%;
+      padding: 12px 40px 12px 40px;
+      border: none;
+      border-radius: 10px;
+      background-color: #223047;
+      color: white;
+      font-size: 14px;
+    }
+
+     .input-name input {
+      width: 65%;
+      padding: 12px 40px 12px 40px;
+      border: none;
+      border-radius: 10px;
+      background-color: #223047;
+      color: white;
+      font-size: 14px;
+    }
+
+    .input-group input::placeholder {
+      color: #cfd6de;
+    }
+
+    .input-group .icon {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 16px;
+    }
+
+    .input-group .toggle-password {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    /* Checkbox */
+    .checkbox-group {
+      margin: 15px 0;
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      color: white;
+    }
+
+    .checkbox-group input {
+      margin-right: 8px;
+    }
+
+    /* Sign up button */
+    .signup-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #ff7f4d;
+      border: none;
+      border-radius: 20px;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      margin: 15px 0;
+      transition: 0.3s;
+    }
+
+    .signup-btn:hover {
+      background-color: #e66f3c;
+    }
+
+    /* Login redirect */
+    .login {
+      text-align: center;
+      font-size: 13px;
+      color: black;
+    }
+
+    .login a {
+      font-weight: bold;
+      color: black;
+      text-decoration: none;
+    }
